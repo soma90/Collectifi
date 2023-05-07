@@ -55,7 +55,7 @@ class Nft_gallery extends Model<Nft_galleryAttributes> {
     });
     db.Nft_gallery.belongsTo(db.Nft, {
       foreignKey: "nft_id",
-      targetKey: "id",
+      targetKey: "token_id",
       onDelete: 'cascade',
       onUpdate: 'cascade',
     });

@@ -111,7 +111,7 @@ class Nft extends Model<NftAttributes> {
 
     db.Nft.hasMany(db.Nft_gallery, {
       foreignKey: 'nft_id',
-      sourceKey: 'id',
+      sourceKey: 'token_id',
       onDelete: 'cascade',
       onUpdate: 'cascade',
     });
